@@ -4,12 +4,12 @@
   "description": "Nobel Medusa.js v2 e-commerce backend",
   "license": "MIT",
   "scripts": {
-    "build": "medusa build",
-    "seed": "medusa exec ./src/scripts/seed.ts",
-    "start": "medusa start",
-    "dev": "medusa develop",
-    "db:generate": "medusa db:generate",
-    "db:migrate": "medusa db:migrate"
+    "build": "npx medusa build",
+    "seed": "npx medusa exec ./src/scripts/seed.ts",
+    "start": "npx medusa start",
+    "dev": "npx medusa develop",
+    "db:generate": "npx medusa db:generate",
+    "db:migrate": "npx medusa db:migrate"
   },
   "dependencies": {
     "@medusajs/admin-sdk": "2.13.1",
