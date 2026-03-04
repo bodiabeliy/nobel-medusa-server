@@ -117,7 +117,7 @@ export default async function syncToStrapi({ container }: ExecArgs) {
 
   for (const product of products) {
     // Fetch prices for each variant separately
-    const variantsData = []
+    const variantsData: { medusa_id: string; title: string; sku: string; prices: { amount: number; currency_code: string }[]; manage_inventory: boolean }[] = []
     for (const v of (product.variants || [])) {
       let prices: any[] = []
       try {
